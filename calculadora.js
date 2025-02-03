@@ -8,4 +8,19 @@ function restar(a, b) {
   return a - b;
 }
 
-module.exports = { sumar, restar };
+function multiplicar(a, b) {
+  return a * b;
+}
+
+function dividir(a, b) {
+  if (b == 0)
+    return 'No se puede dividir entre 0'
+  else
+    return a / b
+}
+
+function raizCuadrada(a) {
+  return Math.sqrt(a)
+}
+
+module.exports = { sumar, restar, multiplicar, dividir, raizCuadrada };
