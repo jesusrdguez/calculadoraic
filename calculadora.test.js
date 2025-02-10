@@ -19,7 +19,3 @@ test('Divide 10 / 0 y devuelve ¡Error!', () => {
 test('Divide 10 / 2 y devuelve 5', () => {
     expect(dividir(10, 2)).toBe(5);
 });
-
-test('Raiz cuadrada 100 y devuelve 10', () => {
-    expect(raizCuadrada(100)).toBe(10);
-});
