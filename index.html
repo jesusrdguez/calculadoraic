@@ -11,8 +11,8 @@
     <h1>Calculadora</h1>
     <input type="number" id="num1" placeholder="Número 1">
     <input type="number" id="num2" placeholder="Número 2">
-    <button onclick="calcular('sumar')">Sumar</button>
-    <button onclick="calcular('restar')">Restar</button>
+    <button onclick="calcular('suma')">Sumar</button>
+    <button onclick="calcular('resta')">Restar</button>
     <button onclick="calcular('multiplicar')">Multiplicar</button>
     <button onclick="calcular('dividir')">Dividir</button>
     <p>Resultado: <span id="resultado"></span></p>
@@ -23,8 +23,8 @@
             const num2 = parseFloat(document.getElementById("num2").value);
             let resultado;
             switch (operacion) {
-                case 'sumar': resultado = sumar(num1, num2); break;
-                case 'restar': resultado = restar(num1, num2); break;
+                case 'suma': resultado = sumar(num1, num2); break;
+                case 'resta': resultado = restar (num1, num2); break;
                 case 'multiplicar': resultado = multiplicar(num1, num2); break;
                 case 'dividir':
                     try {
